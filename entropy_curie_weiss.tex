@@ -292,7 +292,11 @@ with functions $E_1$ and $E_2$ defined as
 	-\left[\frac{K_1(T^*,\mu^*;y)}{K_0(T^*,\mu^*;y)}\right]^2\!.
 \end{equation}
 
-When the ideal-gas contribution to the chemical potential, $\mu_{\rm{id}} = k_{\rm{B}}T \ln(N\Lambda^3/V)$, is taken into account, it becomes evident that the first term in~\eqref{eq:entropy1} represents the entropy of a system of noninteracting molecules arranged on a lattice, subject to the strict single-occupancy constraint (one particle per cell), see~\citep[(47.4)]{Hill56}.
+When the ideal-gas contribution to the chemical potential, $\mu_{\rm{id}} = k_{\rm{B}}T \ln(N\Lambda^3/V)$, is taken into account, it becomes evident that the first term in~\eqref{eq:entropy1} 
+\begin{equation}
+	S^*_{\rm id} = \frac{3}{2} - \frac{\mu^*}{T^*}
+\end{equation}
+represents the entropy of a system of noninteracting molecules arranged on a lattice, subject to the strict single-occupancy constraint (one particle per cell), see~\citep[(47.4)]{Hill56}.
 
 For the entropy per cell, it is seen from \eqref{def:S1} and \eqref{def:S2} that
 \begin{equation}
@@ -381,31 +385,29 @@ If the value for $v^*$ is increased, we would observe many more phases with $S^*
 	\caption{Entropy: (\textbf{a}) Entropy per particle versus chemical potential. (\textbf{b}) Entropy per particle versus density. (\textbf{c}) Entropy per cell versus chemical potential. (\textbf{d}) Entropy per cell versus density. In all figures, color curves correspond to the following temperatures: Red - $T^*=0.40$; Green - $T^*=0.30$ Black - $T^*=0.25$; Blue - $T^* = 0.20$. Parameters are takes as $a=1.2$ and $v^*=5.0$.\label{fig:entropy3}}
 \end{figure} 
 
-The dependence of the entropy per cell on the chemical potential is illustrated in Figure~\ref{fig:entropy3}c, and that on the density in Figure~\ref{fig:entropy3}d.
+The dependence of the entropy per cell on the chemical potential is illustrated in Figure~\ref{fig:entropy3}c. For high temperatures, i.e. $T^*=0.4$, the entropy per cell increases as a function of $\mu^*$ for negative and small positive values, then reaches a maximum, and then decreases. For temperatures just slightly above the critical one, i.e. $T^*=0.3$, the behavior of $S^*_v$ is very nontrivial, with noticeable bends around the corresponding critical points. At lower temperatures, the entropy per cell increases with $\mu^*$ in Phase I. Then in Phase II and Phase III, it has a non-monotonic behavior, but overall, these phases possess the highest entropy per cell compared to all the other phases. Then, for the consecutive phases, the entropy per cell jumps to lower values at each phase transition, while still having non-monotonic behavior within a single phase. 
+
+The dependence of the entropy per cell on the density is presented in Figure~\ref{fig:entropy3}d. For high temperatures, i.e. $T^*=0.4$, the entropy per cell increases as a function of $\rho^*$ for small values, reaches a maximum, and then decreases. For temperatures just slightly above the critical one, i.e. $T^*=0.3$, the behavior of $S^*_v$ starts to resemble that below $T_c$, signaling the approach to critical points. At lower temperatures, the entropy per cell increases with $\rho^*$ in Phase I. Then, within each consecutive phase, it exhibits a non-monotonic behavior, and possesses minima at around integer-value $\rho^*$.
+Based on the available data, even though very scarce, we assume that such behavior of the entropy versus density is a generic characteristic of cell, or lattice, models allowing for multiple occupancy, see the discussion in the next Section~\ref{sec:dis}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion}\label{sec:dis}
 It is not easy to find results for entropy for multiple-occupancy lattice models. Here are some examples we found in literature.
 
-Study~\citep{dLBKGS11} thoroughly examines both entropy per site and the entropy per cell for the three-dimensional fermionic Hubbard model by the dynamical mean-field theory. In this model, the maximum occupancy (or filling) number is 2. Note that their concept of the entropy per site is analoguous to our entropy per cell.
+Study~\citep{dLBKGS11} thoroughly examines both entropy per site and the entropy per cell for the three-dimensional fermionic Hubbard model by the dynamical mean-field theory. In this model, the maximum occupancy (or filling) is 2. Note that their concept of the entropy per site is analoguous to our entropy per cell.
 The entropy per site as a function of chemical potential is presented in~\citep[Figs.~5 and~6]{dLBKGS11}. The dependence of the entropy per site on density is shown in \citep[Fig.~7]{dLBKGS11}.
-That of the entropy per particle on density is illustrated in \citep[Fig.~8]{dLBKGS11}. All Figures contain curves for multiple temperature values, and different Hamiltonian parameters of the Hubbard model.
-The dependence of the entropy per particle on the chemical potential is absent though.
+That of the entropy per particle on density is illustrated in \citep[Fig.~8]{dLBKGS11}. All Figures contain curves for multiple temperatures, and different Hamiltonian parameters of the Hubbard model.
+The dependence of the entropy per particle on the chemical potential is absent though. Qualitative similarities between our results and the results of~\citep{dLBKGS11} are as follows. The evolution of the entropy per cell as a function of $\mu^*$ at high temperature, i.e. $T^*=0.4$ in Figure~\ref{fig:entropy3}c, is similar to the entropy per site versus chemical potential for the Hubbard model at the weak interaction strength, cf. Fig.~5 from~\citep{dLBKGS11}. At the low temperature, our result at $T^*=0.3$ resembles that of~\citep[Fig.~6]{dLBKGS11} for the Hubbard model at the strong interaction strength. To see this similarity, we look at the interval $0.7 \leq \mu^* \leq 1.3$, where two maxima are observed for $S^*_v$ at $T^*=0.3$. The behavior of the entropy per cell versus density, Figure~\ref{fig:entropy3}d, at high temperature, i.e. $T^*=0.4$, is qualitatively the same as the entropy per site versus density of the Hubbard model at the weak interaction strength~\citep[Fig.~7]{dLBKGS11}. At low temperature, the qualitative similarity is observed in the region at $\rho \approx 1.0$, where the dips in the entropy per cell are developed in both models. Finally, we compare the entropy per particle $S^*$, Figure~\ref{fig:entropy3}b, with that of the Hubbard model from~\citep[Fig.~7]{dLBKGS11}. The high temperature regime in Figure~\ref{fig:entropy3}b clearly resembles the weak interaction strength regime in~\citep[Fig.~7]{dLBKGS11}. In turn, at the low temperature regime, $T^*=0.2$, for Phase II, the entropy per particle develops a dip at $\rho^* \approx 1$ analogously as in the Hubbard model at the strong interaction strength~\citep[Fig.~7]{dLBKGS11}.
 
-In~\citep{PKvHT08} the entropy in the single-band Bose-Hubbard model is studied in one and two dimensions by the quantum Monte Carlo methods. The entropy per site as a function of the filling is presented in \citep[Fig.~2]{PKvHT08} for the homoheneous 1D Bose-Hubbard system.
+Similar results for the entropy per site as a function of density are reported in studies~\citep{Campo15},~\citep{PKF20} where the one-dimensional repulsive Hubbard model was studied by different methods. As is seen in~\citep[Fig.~4]{Campo15} and~\citep[Fig.21a]{PKF20}, at high temperature the entropy per site of the Hubbard model has a single maximum, similarly to the entropy per cell in Figure~\ref{fig:entropy3}d at $T^*=0.4$. At low temperature, a minimum is developed at density $\rho^*=1.0$, similarly to $T^*=0.2$ in Figure~\ref{fig:entropy3}d.
 
-
-
-
-Dependence of entropy on the number density (filling number) can be found in the following studies \citep{PKvHT08,dLBKGS11,PKF20}, and our results can be qualitatively compared with the ones from these references.
-
-The dependence of the entropy on temperature is presented in \citep{CPS07} for the three-dimensional Bose-Hubbard model, in \citep{PKvHT08} for the one-dimensional Bose-Hubbard system.
-
-
+In~\citep{PKvHT08} the entropy in the single-band Bose-Hubbard model is studied in one and two dimensions by the quantum Monte Carlo methods. The entropy per site as a function of the filling is presented in \citep[Fig.~2]{PKvHT08} for the homogeneous 1D Bose-Hubbard system. There the plot is extended up to the value of filling $n = 3.0$, and at the moment, this is the only study we found that reports the dependence of the entropy per site on the average occupancy number for the range in density beyond $\rho^* \approx 2.0$. In~\citep[Fig.~2]{PKvHT08}, we observe two dips at fillings $n = 1.0$ and $n = 2.0$, see the red curve for $U/t = 12$. Analogous dips are observed in our model as well, around $\rho^* \approx 1.0$ and $\rho^* \approx 2.0$, respectively, at $T^*=0.2$, see~Figure~\ref{fig:entropy3}d.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
+
+It is very interesting to note, that despite different physical natures, the allowance for maximum occupancy to be higher than one leads to outstandingly similar features in the mentioned models. The Hubbard model, allowing for $\rho^*_{\rm max} = 2.0$, develops a minima in the entropy per site at $\rho^* = 1.0$. The Bose-Hubbard model data, reported up to $\rho^* \leq 3.0$ show the minima for the entropy per site at $\rho^*=1.0$ and at $\rho^* = 2.0$. The cell model with the Curie-Weiss interaction considered in the current work does not have any restriction on the occupancy number, and thus develops the minima in the entropy per cell at $\rho^* \approx 1.0$, $\rho^* \approx 2.0$, $\rho^* \approx 3.0$, and so on. We expect this feature to appear in other multiple-occupancy lattice gas models as well. In particular, the entropy per cell in the double-occupancy lattice gas~\citep{LYZ21} should have a dip at $\rho^* = 1.0$. The generalized exponential model of index $4$ considered in \citep{Prestipino14,PGT15} in the context of cluster crystals, and the lattice gas model of multiple layer adsorption~\citep{dOG78} should both have minima in the entropy per site at integer-valued densities as both models exhibit multiple first-order phase transitions at sufficiently low temperatures, similar to the cell model studied by us. The same arguments apply to the entropy per particle as well.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{6pt} 
@@ -446,20 +448,7 @@ GPF & Grand partition function\\
 \section[\appendixname~\thesection]{}
 \subsection[\appendixname~\thesubsection]{}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Ideas}
-\begin{itemize}
-	\item Ideal lattice gas contribution is explicitly singled out;
-	
-	\item Entropy of the classical (single occupancy) lattice gas
-	
-	\item Entropy of van der Waals fluid
-	
-	\item It is interesting to look at the difference $S - S_{\rm id}$; Is this quantity called the excess entropy?
-	
-	\item The requirement to place more and more particles into one cell creates a diverging negative entropy.
-	See similar statement in~\citep[Sec.~IV]{Stillinger76}
-\end{itemize}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -635,3 +624,15 @@ GPF & Grand partition function\\
 	\caption{Entropy: (\textbf{a}) Entropy per particle versus chemical potential. (\textbf{b}) Entropy per perticle versus density. (\textbf{c}) Entropy per cell versus chemical potential. (\textbf{d}) Entropy per cell versus density. In all figures color curves correspond to different temperatures: Red - $T^*=0.40$; Black - $T^*=0.25$; Blue - $T^* = 0.20$.\label{fig:entropy2}}
 \end{figure} 
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Ideas}
+\begin{itemize}
+	
+	\item Entropy of the classical (single occupancy) lattice gas
+	
+	\item Entropy of van der Waals fluid
+	
+	\item It is interesting to look at the difference $S - S_{\rm id}$; Is this quantity called the excess entropy?
+	
+\end{itemize}
