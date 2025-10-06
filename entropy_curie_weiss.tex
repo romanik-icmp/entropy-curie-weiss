@@ -313,8 +313,8 @@ Equations~\eqref{eq:entropy1} and~\eqref{eq:entropy2} express the entropy as a f
 	\rho^*=\frac{K_1(T^*,\mu^*;\bar{y}_{\rm max})}{K_0(T^*,\mu^*;\bar{y}_{\rm max})}.
 \end{equation}
 
-\subsection{Parametric representation}
-Noticing that by~\eqref{cond:max} and~\eqref{def:E1}
+%\subsection{Parametric representation}
+Let us now represent the analytical results for entropy in the form of parametric equations. Noticing that by~\eqref{cond:max} and~\eqref{def:E1}
 \begin{equation}
 	\bar{y}_{\rm max} = \frac{1}{T^*}\frac{K_1(T^*,\mu^*;y)}{K_0(T^*,\mu^*;y)}
 \end{equation}
@@ -350,7 +350,69 @@ The explicit expression for the entropy per cell in terms of $\tilde{K}_j$ reads
 	S^*_v(T^*;\bar{z}_{\rm max}) = \left(\frac{3}{2} - \bar{z}_{\rm max}\right) \frac{\tilde{K}_1}{\tilde{K}_0} + \ln \tilde{K}_0 + \frac{a}{2T^*} \frac{\tilde{K}_2}{\tilde{K}_0},
 \end{equation}
 
-Results for Entropy are illustrated in Figure~\ref{fig:entropy3}. The numerical values for the parameters are taken as $a=1.2$, and $v^*=5.0$. Each Figure contains curves for four different temperatures: the red curve is $T^* = 0.4$, which is much higher than the critical temperatures; the green curve is $T^* = 0.3$, which is slightly higher than the critical temperatures; the black curve is $T^*=0.25$, which is just slightly lower than the critical temperature; and the blue curve is $T^*=0.20$, which is significantly lower than the critical temperature. The solid parts of the curves represent the results for the stable phases, while the dashed parts correspond to two-phase regions, i.e. to solutions of $\bar{y}$ to $E_1=0$ that may violate the condition of global maxima $E_2 < 0$, see~\eqref{cond:max}.
+Before proceeding with analysis of the entropy behavior, let us recall that the considered model possesses an infinite number of critical points, and thus, an infinite number of first-order phase transitions at sufficiently low temperatures~\citep{KD22}. We call the phase with the lowest density Phase I. Then the first first-order phase transition leads to a phase with a higher density, Phase II. The second first-order phase transition results in Phase III, and so on to Phase IV, Phase V, etc. Phase diagrams in the temperature-density plane is shown in~\citep[Fig.~10]{KD22}, detailed numerical values of quantities at the first five critical points are summarized in \citep[Table~1]{RDKPS25arxiv}. For convenience, in Table~1, we report the numerical values of relevant physical quantities at the coexistence lines at temperatures $T^*=0.25$ and $T^*=0.20$. 
+
+\begin{table}
+	\caption{Critical point coordinates for the first four critical points}
+	%\begin{adjustwidth}{-\extralength}{0cm}
+		\begin{tabularx}{\textwidth}{CCCCCCC}
+			$n$ & $T^*_c$ & $\rho^*_c$ & $\mu^*_c$ & $S^*_c$ & $S^*_{v, c}$ & $\bar{z}_c$ \\
+			\midrule
+			
+			1 & & & & & & \\
+			\midrule
+			2 & & & & & & \\
+			
+			\midrule
+			3 & & & & & & \\
+			
+			\midrule
+			4 & & & & & & \\
+			
+			\bottomrule
+		\end{tabularx}		
+	%\end{adjustwidth}
+\end{table}
+
+\begin{table}[H]
+	\caption{Coexistence line values for some quantities.\label{tab2}}
+	\begin{adjustwidth}{-\extralength}{0cm}
+		\begin{tabularx}{\fulllength}{C|CCCCCCC}
+			$T^*$	& $\mu^*_{I-II}$	& $\rho^*_I$   & $\rho^*_{II}$ & $S^*_{I}$ & $S^*_{II}$ & $\bar{z}_{I}$ & $\bar{z}_{II}$ \\
+			\midrule
+			
+			0.25 & & & & & & &  \\
+			0.20 & & & & & & & \\
+			
+			\midrule
+				& $\mu^*_{II-III}$	& $\rho^*_{II}$   & $\rho^*_{III}$ & $S^*_{II}$ & $S^*_{III}$ & $\bar{z}_{II}$ & $\bar{z}_{III}$ \\
+			\midrule
+			
+			0.25 & & & & & & &  \\
+			0.20 & & & & & & & \\
+			
+			\midrule
+			& $\mu^*_{III-IV}$	& $\rho^*_{III}$   & $\rho^*_{IV}$ & $S^*_{III}$ & $S^*_{IV}$ & $\bar{z}_{III}$ & $\bar{z}_{IV}$ \\
+			\midrule
+			
+			0.25 & & & & & & &  \\
+			0.20 & & & & & & & \\
+			
+			\midrule
+			& $\mu^*_{IV-V}$	& $\rho^*_{IV}$   & $\rho^*_{V}$ & $S^*_{IV}$ & $S^*_{V}$ & $\bar{z}_{IV}$ & $\bar{z}_{V}$\\
+			\midrule
+			
+			0.25 & & & & & & &  \\
+			0.20 & & & & & & & \\
+			
+			\bottomrule
+		\end{tabularx}
+	\end{adjustwidth}
+\end{table}
+
+
+
+Results for Entropy are illustrated in Figure~\ref{fig:entropy3}. The numerical values for the parameters are taken as $a=1.2$, and $v^*=5.0$. Each Figure contains curves for four different temperatures: the red curve is $T^* = 0.4$, which is much higher than the critical temperatures; the green curve is $T^* = 0.3$, which is slightly higher than the critical temperatures; the black curve is $T^*=0.25$, which is just slightly lower than the critical temperature; and the blue curve is $T^*=0.20$, which is significantly lower than the critical temperature. The solid parts of the curves represent the results for the stable phases, while the dashed parts correspond to two-phase regions, i.e. to solutions of $\bar{y}$ to $E_1=0$ that may violate the condition of global maxima $E_2 < 0$, see~\eqref{cond:max}. 
 
 The dependence of the entropy per particle on the chemical potential is presented in Figure~\ref{fig:entropy3}a. For the supercritical region, Red and Green curves, the entropy has a monotonic decreasing behavior with the chemical potential $\mu^*$. For temperatures below the critical one, we observe that phase II has a lower entropy compared to Phase I, then Phase III has a lower entropy than Phase II, and so on. However, within a particular phase, except Phase I, the dependence of the entropy per particle on the chemical potential may not be monotonic. At the phase transitions, the entropy exhibits jumps from a higher value at the phase with a lower chemical potential, to a lower value at the phase with a higher chemical potential.
 
