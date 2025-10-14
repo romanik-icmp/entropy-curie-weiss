@@ -139,7 +139,7 @@ $^{1}$ \quad Yukhnovskii Institute for Condensed Matter Physics of NAS of Ukrain
 
 % Abstract (Do not insert blank lines, i.e. \\) 
 \abstract{Entropy of the cell fluid model with Curie-Weiss interaction is obtained in analytical form as a function of temperature and chemical potential.
-As to our knowledge, the entropy of multiple-occupancy lattice gas model is reported for the first time in the literature, except maybe for a few occasions. Other benefits are that the expressions are analytical and exact, if viewed as parametric equations.}
+A parametric equation is derived representing the entropy as a function of density. Features of both the entropy per particle and the entropy per cell are investigated at the ``entropy-density'' and ``entropy-chemical potential'' planes. The considered cell model is a multiple-occupancy model and possesses an infinite sequence of first-order phase transitions at sufficiently low temperature. We found that the entropy exhibits profound minima at around integer-valued particle densities, which may be a generic feature of multiple-occupancy models.}
 
 % Keywords
 \keyword{Entropy; lattice model; multiple occupancy} 
@@ -275,7 +275,7 @@ where $a = J_2/J_1$, and the special functions $K_j$, with $j=0, 1, 2, \ldots$, 
 \end{equation}
 Here $v^* = v/\lambda^3$, $\lambda = (2\pi\hbar^2/mJ_1)^{1/2}$, with $\hbar$ the Planck constant, $m$ the mass of a particle. It is interesting to note that the quantity analogous to $v^*$ was mentioned in~\citep{PGT15} in the context of a model that also allows for multiple occupancy.
 
-The quantity $\bar{y}_{\rm max}$ in \eqref{def:Kj} is itself a function of $T^*$ and $\mu^*$. It is defined as a solution of the extremum condition
+The quantity $\bar{y}_{\rm max}$ in \eqref{def:Kj} is itself a function of $T^*$ and $\mu^*$, and we just simplify notation by implying $\bar{y}_{\mathrm{max}} = \bar{y}_{\mathrm{max}}(T^*,\mu^*)$. It is defined as a solution of the extremum condition
 \begin{eqnarray}
 	\label{cond:max}
 	E_1(T^*,\mu^*; \bar{y}_{\rm max}) & = & 0,
@@ -318,11 +318,11 @@ Let us now represent the analytical results for entropy in the form of parametri
 \begin{equation}
 	\bar{y}_{\rm max} = \frac{1}{T^*}\frac{K_1(T^*,\mu^*;y)}{K_0(T^*,\mu^*;y)}
 \end{equation}
-and applying the following change of variables, which is the idea taken from~\citep{KD22},
+and applying the idea taken from~\citep{KD22}, we introduce a new function
 \begin{equation}
-	\bar{y}_{\rm max} + \frac{\mu^*}{T^*} = \bar{z}_{\rm max},
+	\bar{z}_{\rm max}(T^*,\mu^*) = \bar{y}_{\rm max} + \frac{\mu^*}{T^*},
 \end{equation}
-we rewrite the entropy in the form
+and rewrite the entropy in the form
 \begin{equation}
 	\label{eq:S_in_z}
 	S^*(T^*;\bar{z}_{\rm max}) = \frac{3}{2} - \bar{z}_{\rm max} + \frac{\tilde{K}_0 \ln \tilde{K}_0}{\tilde{K}_1} + \frac{a}{2T^*} \frac{\tilde{K}_2}{\tilde{K}_1},
@@ -336,7 +336,7 @@ The chemical potential is expressed in $\tilde{K}_j$ as
 	\label{eq:mu_in_z}
 	\mu^* = T^* \bar{z}_{\rm max} - \frac{\tilde{K}_1(T^*;\bar{z}_{\rm max})}{\tilde{K}_0(T^*;\bar{z}_{\rm max})}.
 \end{equation}
-At any given temperature $T^*$, Eqs.~\eqref{eq:S_in_z} and~\eqref{eq:mu_in_z} together represent a parametric equation for the entropy $S^*$ as a function of $\mu^*$, with $\bar{z}_{\rm max}$ being the parameter.
+At any given temperature $T^*$, Eqs.~\eqref{eq:S_in_z} and~\eqref{eq:mu_in_z} can be formally considered as a parametric equation for the entropy $S^*$ as a function of $\mu^*$, with $\bar{z}_{\rm max}$ being the parameter.
 
 Similarly, if Eq.~\eqref{eq:rho_in_y} is rewritten as
 \begin{equation}
@@ -437,10 +437,10 @@ If the value for $v^*$ is increased, we would observe many more phases with $S^*
 		%\subfloat[\centering]{\includegraphics[width=7.0cm]{Definitions/logo-mdpi}}\\
 		\subfloat[\centering]{\includegraphics[width=7.0cm]{images/entropy_per_particle_vs_rho3}}\\
 		%\subfloat[\centering]{\includegraphics[width=7.0cm]{Definitions/logo-mdpi}}
-		\subfloat[\centering]{\includegraphics[width=7.0cm]{images/entropy_per_cell_vs_mu3}}
+		\subfloat[\centering]{\includegraphics[width=7.0cm]{images/entropy_per_cell_vs_mu4}}
 		%\hfill
 		%\subfloat[\centering]{\includegraphics[width=7.0cm]{Definitions/logo-mdpi}}
-		\subfloat[\centering]{\includegraphics[width=7.0cm]{images/entropy_per_cell_vs_rho3}}
+		\subfloat[\centering]{\includegraphics[width=7.0cm]{images/entropy_per_cell_vs_rho4}}
 		%\isPreprints{}{% This command is only used for ``preprints''.
 		\end{adjustwidth}
 		%} % If the paper is ``preprints'', please uncomment this parenthesis.
@@ -464,6 +464,8 @@ The dependence of the entropy per particle on the chemical potential is absent t
 Similar results for the entropy per site as a function of density are reported in studies~\citep{Campo15},~\citep{PKF20} where the one-dimensional repulsive Hubbard model was studied by different methods. As is seen in~\citep[Fig.~4]{Campo15} and~\citep[Fig.21a]{PKF20}, at high temperature the entropy per site of the Hubbard model has a single maximum, similarly to the entropy per cell in Figure~\ref{fig:entropy3}d at $T^*=0.4$. At low temperature, a minimum is developed at density $\rho^*=1.0$, similarly to $T^*=0.2$ in Figure~\ref{fig:entropy3}d.
 
 In~\citep{PKvHT08} the entropy in the single-band Bose-Hubbard model is studied in one and two dimensions by the quantum Monte Carlo methods. The entropy per site as a function of the filling is presented in \citep[Fig.~2]{PKvHT08} for the homogeneous 1D Bose-Hubbard system. There the plot is extended up to the value of filling $n = 3.0$, and at the moment, this is the only study we found that reports the dependence of the entropy per site on the average occupancy number for the range in density beyond $\rho^* \approx 2.0$. In~\citep[Fig.~2]{PKvHT08}, we observe two dips at fillings $n = 1.0$ and $n = 2.0$, see the red curve for $U/t = 12$. Analogous dips are observed in our model as well, around $\rho^* \approx 1.0$ and $\rho^* \approx 2.0$, respectively, at $T^*=0.2$, see~Figure~\ref{fig:entropy3}d.
+
+Additionally, in Appendix~\ref{app:vdW}, we represent results of the van der Waals fluid theory, in the form analogous as in Fig.~\ref{fig:entropy3}. Note, that qualitative comparison between the cell model and the van der Waals theory can be made only for the transition between Phase I and Phase II.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -508,6 +510,7 @@ GPF & Grand partition function\\
 \appendixstart
 \appendix
 \section[\appendixname~\thesection]{Entropy in the van der Waals fluid}
+\label{app:vdW}
 The entropy of the van der Waals (vdW) fluid is expressed via density and temperature as~\citep[(55)]{Johnston14}
 \begin{equation}
 	\label{vdw:S}
@@ -531,6 +534,8 @@ In Fig.~\ref{fig:entropy_vdW}, the behavior of the entropy in the van der Waals 
 	\rho^*_{\mathrm{vdW}} = \frac{\hat{n}}{3}; \quad T^*_{vdW} = \frac{\hat{\tau}}{4}; \quad \mu^*_{vdW} = \frac{\mu}{4k_{\mathrm B}T_c}
 \end{equation}
 Note, that in such representation, $v^*_{\mathrm{vdW}} = 2x_c$.
+
+In the van der Waals theory, the concept of entropy per cell is formally meant as the product of the entropy per particle $S^*_{\mathrm{vdW}}$ and density $\rho^*_{\mathrm{vdW}}$, by analogy with the cell model.
 
 \begin{figure}[H]
 	%\isPreprints{}{% This command is only used for ``preprints''.
