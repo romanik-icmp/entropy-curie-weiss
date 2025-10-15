@@ -197,15 +197,17 @@ A parametric equation is derived representing the entropy as a function of densi
 
 \section{Introduction}
 
-The lattice gas models with multiple site or cell occupancy are studied much less frequently than the common classical lattice gas with maximum occupancy equal to one, i.e. the lattice gas in which cells can be either empty or occupied by a single particle~\citep{LY52,Stanley71}.
+Lattice-gas models that allow multiple occupancy of a cell, in contrast to classical lattice gases~\citep{LY52,Stanley71} where each cell can contain at most one particle, have been studied much less frequently. Nevertheless, they represent a valuable class of models capable of reproducing the essential thermodynamic features of fluids with soft or penetrable interactions~\citep{Stillinger76,LWL98,FHL04,FL18,LYZ21}. From the statistical-mechanical point of view, such systems constitute an interesting theoretical object that exhibits nontrivial collective behavior while remaining analytically tractable within mean-field or Curie–Weiss-type approximations~\citep{KKD20,KD22}.
 
-Still, the multiple occupancy lattice gas is a very interesting object with interesting physical properties~\citep{LWL98,FHL04,FL18,LYZ21}. 
-Such objects has not been extensively explored yet. Entropy is one of interesting thermodynamic quantities that may exhibit non-trivial features in such models, but the available literature on this topic is very scarce.
+Among the thermodynamic quantities characterizing these systems, entropy plays a central role, as it provides a direct measure of configurational degeneracy and is closely related to the onset of phase transitions. Although some studies~\citep{dOG78,FHL04,Prestipino14,PGT15,FL18,LYZ21,KD22} have addressed the thermodynamic and phase properties of multi-occupancy models, their entropic characteristics remain largely unexplored. In the present work, we aim to address this gap by deriving explicit analytical expressions for the entropy of a cell fluid model with multiple occupancy and Curie–Weiss-type attraction. Because of its mean-field character, the Curie–Weiss interaction allows for an exact thermodynamic solution, making it a convenient analytical reference for multi-occupancy systems.
 
-In this study, we make an attempt to partially fill this gap by examining the entropy of a cell fluid model with a Curie-Weiss type of interaction~\citep{KKD20,KD22,RDKPS25arxiv}. It is worth noting here that we understand the lattice gas model in the same way as Stanley did, see~\citep[Appendix A]{Stanley71}. We speak of the occupancy of cells by the centers of particles, rather than restrict the atoms' positions to a discrete set of sites in a lattice, hence the term ``cell fluid model'' originates.
+Following Stanley~\citep[Appendix A]{Stanley71}, we interpret the lattice gas as a cell fluid, that is, as a system in which a particle center is located in a cell and particle positions are not restricted to a discrete set of sites in a lattice. In our case, each cell may contain an arbitrary number of particles, and the  interaction is defined through both short-range repulsion and long-range mean-field attraction. The present study extends the results of~~\citep{KKD20,KD22,RDKPS25arxiv} by focusing on the entropy and its dependence on chemical potential, particle density, and temperature.
+
+The paper is organized as follows. In Section~\ref{sec:model}, the model is briefly described. Section~\ref{sec:res} presents exact entropy expressions, and illustrates the results numerically and graphically, while their physical interpretation and qualitative similarity with other systems are discussed in~Section~\ref{sec:dis}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Model}
+\label{sec:model}
 An open system of point particles is considered in volume $V\subset\mathbb R^3$ in three space dimensions. The total volume $V$ is partitioned into $N_v$ non-overlapping congruent cubic cells $\Delta_l$, $l\in\{1,...,N_v\}$, each of volume $v$, such that $V$ is the union of all $\Delta_l$'s:
 \begin{equation}\label{volume}
 	V = \bigcup_{l=1}^{N_v}\Delta_l,\qquad
