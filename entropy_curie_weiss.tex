@@ -467,13 +467,21 @@ Similar results for the entropy per site as a function of density are reported i
 
 In~\citep{PKvHT08} the entropy in the single-band Bose-Hubbard model is studied in one and two dimensions by the quantum Monte Carlo methods. The entropy per site as a function of the filling is presented in \citep[Fig.~2]{PKvHT08} for the homogeneous 1D Bose-Hubbard system. There the plot is extended up to the value of filling $n = 3.0$, and at the moment, this is the only study we found that reports the dependence of the entropy per site on the average occupancy number for the range in density beyond $\rho^* \approx 2.0$. In~\citep[Fig.~2]{PKvHT08}, we observe two dips at fillings $n = 1.0$ and $n = 2.0$, see the red curve for $U/t = 12$. Analogous dips are observed in our model as well, around $\rho^* \approx 1.0$ and $\rho^* \approx 2.0$, respectively, at $T^*=0.2$, see~Figure~\ref{fig:entropy3}d.
 
-Additionally, in Appendix~\ref{app:vdW}, we represent results of the van der Waals fluid theory, in the form analogous as in Fig.~\ref{fig:entropy3}. Note, that qualitative comparison between the cell model and the van der Waals theory can be made only for the transition between Phase I and Phase II.
+In summary, it is very interesting to note, that despite different physical natures, the allowance for maximum occupancy to be higher than one leads to outstandingly similar features in the mentioned models. The Hubbard model, allowing for $\rho^*_{\rm max} = 2.0$, develops a minima in the entropy per site at $\rho^* = 1.0$. The Bose-Hubbard model data, reported up to $\rho^* \leq 3.0$ show the minima for the entropy per site at $\rho^*=1.0$ and at $\rho^* = 2.0$. The cell model with the Curie-Weiss interaction considered in the current work does not have any restriction on the occupancy number, and thus develops the minima in the entropy per cell at $\rho^* \approx 1.0$, $\rho^* \approx 2.0$, $\rho^* \approx 3.0$, and so on. We expect this feature to appear in other multiple-occupancy lattice gas models as well. In particular, the entropy per cell in the double-occupancy lattice gas~\citep{LYZ21} should have a dip at $\rho^* = 1.0$. The generalized exponential model of index $4$ considered in \citep{Prestipino14,PGT15} in the context of cluster crystals, and the lattice gas model of multiple layer adsorption~\citep{dOG78} should both have minima in the entropy per site at integer-valued densities as both models exhibit multiple first-order phase transitions at sufficiently low temperatures, similar to the cell model studied by us. The same arguments apply to the entropy per particle as well.
+
+Additionally, in Appendix~\ref{app:vdW}, we represent results of the van der Waals fluid theory, in the form analogous as in Fig.~\ref{fig:entropy3}. Note, that qualitative comparison between the cell model and the van der Waals theory can be made only for the transition between Phase I and Phase II. This suggests that the first-order phase transition between Phase I and Phase II is of liquid-gas type.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
+\label{sec:conclusions}
+We have analytically derived explicit expressions for the entropy of a cell fluid model with multiple occupancy and Curie–Weiss-type interaction. Within this framework, both the entropy per particle and the entropy per cell were obtained as functions of temperature and chemical potential, and their dependences on density were represented in a parametric form. The analysis demonstrates that the entropy exhibits a sequence of discontinuities at first-order phase transitions, in full correspondence with the infinite cascade of coexistence regions between fluid phases of increasing density.
 
-It is very interesting to note, that despite different physical natures, the allowance for maximum occupancy to be higher than one leads to outstandingly similar features in the mentioned models. The Hubbard model, allowing for $\rho^*_{\rm max} = 2.0$, develops a minima in the entropy per site at $\rho^* = 1.0$. The Bose-Hubbard model data, reported up to $\rho^* \leq 3.0$ show the minima for the entropy per site at $\rho^*=1.0$ and at $\rho^* = 2.0$. The cell model with the Curie-Weiss interaction considered in the current work does not have any restriction on the occupancy number, and thus develops the minima in the entropy per cell at $\rho^* \approx 1.0$, $\rho^* \approx 2.0$, $\rho^* \approx 3.0$, and so on. We expect this feature to appear in other multiple-occupancy lattice gas models as well. In particular, the entropy per cell in the double-occupancy lattice gas~\citep{LYZ21} should have a dip at $\rho^* = 1.0$. The generalized exponential model of index $4$ considered in \citep{Prestipino14,PGT15} in the context of cluster crystals, and the lattice gas model of multiple layer adsorption~\citep{dOG78} should both have minima in the entropy per site at integer-valued densities as both models exhibit multiple first-order phase transitions at sufficiently low temperatures, similar to the cell model studied by us. The same arguments apply to the entropy per particle as well.
+At temperatures below the critical points, the entropy per particle decreases stepwise with increasing chemical potential, while the entropy per cell shows pronounced nonmonotonic behavior within individual phases. In the ``entropy–density'' representation, both quantities display distinct minima near integer-valued densities. These minima are directly related to the discrete character of cell occupancy and appear to be a generic thermodynamic signature of multiple-occupancy lattice systems.
+
+The study further reveals that, at sufficiently high densities or small values of the reduced cell volume $v^*$, the entropy may become negative, which is an artifact of the classical treatment analogous to that observed in the Gaussian-core model. Increasing $v^*$ shifts this behavior to higher densities while preserving the overall qualitative pattern.
+
+A qualitative comparison with lattice models of different microscopic origin, such as the fermionic Hubbard, and Bose–Hubbard models, shows that all systems allowing for more than single occupancy develop entropy minima at integer densities. The present Curie–Weiss cell model, unrestricted in occupancy number, extends this tendency to an infinite sequence of minima corresponding to each successive phase. This feature suggests a unifying thermodynamic behavior among multiple-occupancy lattice gases (cell fluids) and related soft-matter systems with cluster-forming interactions.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{6pt} 
@@ -513,6 +521,7 @@ GPF & Grand partition function\\
 \appendix
 \section[\appendixname~\thesection]{Entropy in the van der Waals fluid}
 \label{app:vdW}
+
 The entropy of the van der Waals (vdW) fluid is expressed via density and temperature as~\citep[(55)]{Johnston14}
 \begin{equation}
 	\label{vdw:S}
@@ -523,21 +532,6 @@ where $\hat{\tau} = T/T_c$, $\hat{n} = \rho/\rho_c$, and
 	x_c \equiv \frac{k_{\rm B} T_c}{8P_c \Lambda^3_c} = \frac{b}{\Lambda^3_c},
 \end{equation}
 where $\Lambda_c$ is the de Broglie wavelength at the critical temperature, and $b$ is the ``excluded volume'' parameter of the van der Waals theory. The meaning of $b/\Lambda^3_c$ is similar to the meaning of quantity $v^*$ in our cell theory.
-
-The chemical potential of the vdW fluid as a function of temperature and density is given by~\cite[(70c)]{Johnston14}
-\begin{equation}
-	\label{vdw:mu}
-	\frac{\mu}{k_{\rm B}T_c} = -\hat{\tau} \ln \left(\frac{3-\hat{n}}{\hat{n}}\right) + \frac{\hat{\tau}\hat{n}}{3-\hat{n}} - \frac{9\hat{n}}{4} - \hat{\tau}\ln(\hat{\tau}^{3/2}) - \hat{\tau}\ln(x_c).
-\end{equation}
-Eqs.~\eqref{vdw:mu} and~\eqref{vdw:S} can be considered as a parametric equation for the entropy as a function of the chemical potential, with density $\hat{n}$ being the parameter.
-
-In Fig.~\ref{fig:entropy_vdW}, the behavior of the entropy in the van der Waals fluid is demonstrated in terms of the appropriate reduced variables:
-\begin{equation}
-	\rho^*_{\mathrm{vdW}} = \frac{\hat{n}}{3}; \quad T^*_{vdW} = \frac{\hat{\tau}}{4}; \quad \mu^*_{vdW} = \frac{\mu}{4k_{\mathrm B}T_c}
-\end{equation}
-Note, that in such representation, $v^*_{\mathrm{vdW}} = 2x_c$.
-
-In the van der Waals theory, the concept of entropy per cell is formally meant as the product of the entropy per particle $S^*_{\mathrm{vdW}}$ and density $\rho^*_{\mathrm{vdW}}$, by analogy with the cell model.
 
 \begin{figure}[H]
 	%\isPreprints{}{% This command is only used for ``preprints''.
@@ -559,6 +553,22 @@ In the van der Waals theory, the concept of entropy per cell is formally meant a
 		%} % If the paper is ``preprints'', please uncomment this parenthesis.
 	\caption{Entropy of the van der Waals fluid: (\textbf{a}) Entropy per particle versus chemical potential. (\textbf{b}) Entropy per particle versus density. (\textbf{c}) Entropy per cell versus chemical potential. (\textbf{d}) Entropy per cell versus density. In all figures, color curves correspond to the following temperatures: Red - $T^*_{\mathrm{vdW}}=0.0.3$; Green - $T^*_{\mathrm{vdW}}=0.25$ Black - $T^*_{\mathrm{vdW}}=0.225$; Blue - $T^*_{\mathrm{vdW}} = 0.20$. The value of the parameter: $v^*_{\mathrm{vdW}}=5.0$.\label{fig:entropy_vdW}}
 \end{figure} 
+
+The chemical potential of the vdW fluid as a function of temperature and density is given by~\cite[(70c)]{Johnston14}
+\begin{equation}
+	\label{vdw:mu}
+	\frac{\mu}{k_{\rm B}T_c} = -\hat{\tau} \ln \left(\frac{3-\hat{n}}{\hat{n}}\right) + \frac{\hat{\tau}\hat{n}}{3-\hat{n}} - \frac{9\hat{n}}{4} - \hat{\tau}\ln(\hat{\tau}^{3/2}) - \hat{\tau}\ln(x_c).
+\end{equation}
+Eqs.~\eqref{vdw:mu} and~\eqref{vdw:S} can be considered as a parametric equation for the entropy as a function of the chemical potential, with density $\hat{n}$ being the parameter.
+
+In Fig.~\ref{fig:entropy_vdW}, the behavior of the entropy in the van der Waals fluid is demonstrated in terms of the appropriate reduced variables:
+\begin{equation}
+	\rho^*_{\mathrm{vdW}} = \frac{\hat{n}}{3}; \quad T^*_{vdW} = \frac{\hat{\tau}}{4}; \quad \mu^*_{vdW} = \frac{\mu}{4k_{\mathrm B}T_c}
+\end{equation}
+Note, that in such representation, $v^*_{\mathrm{vdW}} = 2x_c$.
+
+In the van der Waals theory, the concept of entropy per cell is formally meant as the product of the entropy per particle $S^*_{\mathrm{vdW}}$ and density $\rho^*_{\mathrm{vdW}}$, by analogy with the cell model.
+
 
 
 
@@ -693,57 +703,4 @@ In the van der Waals theory, the concept of entropy per cell is formally meant a
 %} % If the paper is ``preprints'', please uncomment this parenthesis.
 \end{document}
 
-\begin{figure}[H]
-	%\isPreprints{}{% This command is only used for ``preprints''.
-		\begin{adjustwidth}{-\extralength}{0cm}
-			\centering
-			%} % If the paper is ``preprints'', please uncomment this parenthesis.
-		%\subfloat[\centering]{\includegraphics[width=7.0cm]{Definitions/logo-mdpi}}
-		\subfloat[\centering]{\includegraphics[width=7.0cm]{images/entropy_per_particle_vs_mu1}}
-		%\hfill
-		%\subfloat[\centering]{\includegraphics[width=7.0cm]{Definitions/logo-mdpi}}\\
-		\subfloat[\centering]{\includegraphics[width=7.0cm]{images/entropy_per_particle_vs_rho1}}\\
-		%\subfloat[\centering]{\includegraphics[width=7.0cm]{Definitions/logo-mdpi}}
-		\subfloat[\centering]{\includegraphics[width=7.0cm]{images/entropy_per_cell_vs_mu1}}
-		%\hfill
-		%\subfloat[\centering]{\includegraphics[width=7.0cm]{Definitions/logo-mdpi}}
-		\subfloat[\centering]{\includegraphics[width=7.0cm]{images/entropy_per_cell_vs_rho1}}
-		%\isPreprints{}{% This command is only used for ``preprints''.
-		\end{adjustwidth}
-		%} % If the paper is ``preprints'', please uncomment this parenthesis.
-	\caption{Entropy: (\textbf{a}) Entropy per particle versus chemical potential. (\textbf{b}) Entropy per perticle versus density. (\textbf{c}) Entropy per cell versus chemical potential. (\textbf{d}) Entropy per cell versus density. In all figures color curves correspond to different temperatures: Red - $T^*=0.30$; Black - $T^*=0.25$; Blue - $T^* = 0.20$.\label{fig:entropy1}}
-\end{figure} 
-
-\begin{figure}[H]
-	%\isPreprints{}{% This command is only used for ``preprints''.
-		\begin{adjustwidth}{-\extralength}{0cm}
-			\centering
-			%} % If the paper is ``preprints'', please uncomment this parenthesis.
-		%\subfloat[\centering]{\includegraphics[width=7.0cm]{Definitions/logo-mdpi}}
-		\subfloat[\centering]{\includegraphics[width=7.0cm]{images/entropy_per_particle_vs_mu2}}
-		%\hfill
-		%\subfloat[\centering]{\includegraphics[width=7.0cm]{Definitions/logo-mdpi}}\\
-		\subfloat[\centering]{\includegraphics[width=7.0cm]{images/entropy_per_particle_vs_rho2}}\\
-		%\subfloat[\centering]{\includegraphics[width=7.0cm]{Definitions/logo-mdpi}}
-		\subfloat[\centering]{\includegraphics[width=7.0cm]{images/entropy_per_cell_vs_mu2}}
-		%\hfill
-		%\subfloat[\centering]{\includegraphics[width=7.0cm]{Definitions/logo-mdpi}}
-		\subfloat[\centering]{\includegraphics[width=7.0cm]{images/entropy_per_cell_vs_rho2}}
-		%\isPreprints{}{% This command is only used for ``preprints''.
-		\end{adjustwidth}
-		%} % If the paper is ``preprints'', please uncomment this parenthesis.
-	\caption{Entropy: (\textbf{a}) Entropy per particle versus chemical potential. (\textbf{b}) Entropy per perticle versus density. (\textbf{c}) Entropy per cell versus chemical potential. (\textbf{d}) Entropy per cell versus density. In all figures color curves correspond to different temperatures: Red - $T^*=0.40$; Black - $T^*=0.25$; Blue - $T^* = 0.20$.\label{fig:entropy2}}
-\end{figure} 
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Ideas}
-\begin{itemize}
-	
-	\item Entropy of the classical (single occupancy) lattice gas
-	
-	\item Entropy of van der Waals fluid
-	
-	\item It is interesting to look at the difference $S - S_{\rm id}$; Is this quantity called the excess entropy?
-	
-\end{itemize}
+We derived analytical expressions for the entropy of the cell fluid model with multiple occupancy and Curie–Weiss-type interaction. The obtained formulas describe the entropy per particle and per cell as functions of temperature, chemical potential, and density. The results show that at low temperatures the entropy changes discontinuously at first-order phase transitions and forms a sequence of steps between fluid phases of increasing density. In the entropy–density plane, both quantities have clear minima near integer densities. This behavior is a characteristic feature of models that allow several particles in one cell. At very high densities, the entropy becomes negative, which is a consequence of the classical approximation. The same type of entropy minima is also found in the Hubbard and Bose–Hubbard models, showing that the presence of multiple occupancy leads to similar thermodynamic features in different lattice systems.
